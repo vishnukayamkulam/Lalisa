@@ -5,7 +5,7 @@
 <a href="#"><img title="Lalisa" src="https://img.shields.io/badge/Lalisa-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
 </p>
   <p align="center">
-<a href="https://github.com/vishnukayamkulam"><img title="Author" src="https://img.shields.io/badge/Author-vishnukayamkulam/Lalisa?color=blue&style=for-the-badge&logo=whatsapp"></a>
+<a href="https://github.com/vishnukayamkulam"><img title="Author" src="https://img.shields.io/badge/Author-vishnu-kayamkulam/Lalisa?color=blue&style=for-the-badge&logo=whatsapp"></a>
 </p>
 </div>
 <p align="center">
