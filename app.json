@@ -1,0 +1,168 @@
+{
+    "name": "Meenakshi",
+    "description": "Meenakshi(Modified version of WhatsAsena)- Makes it easy and fun to use Whatsapp. World’s first UserBot made for WhatsApp.",
+    "logo": "https://i.hizliresim.com/m13agyp.jpg",
+    "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai"],
+    "repository": "https://github.com/vishnu-kayamkulam/Meenakshi",
+    "website":   "https://t.me/phaticusthiccy",
+    "success_url": "https://t.me/AsenaSupport",
+    "stack": "container",
+    "env": {
+        "ASENA_SESSION": {
+            "description": "QR code scan ആക്കിയപ്പോൾ കിട്ടിയ കോഡ് ഇവടെ Paste ചെയ്യുക. Type here yours Asena Session.",
+            "required": true
+        },
+        "SUDO": {
+            "description": "Sudo എന്ന് വെച്ചാൽ നമ്മൾക്കു നമ്മടെ ബോട്ടിനെ നമ്മുടെ വേറെ ഏതെങ്കിലും whatsapp നമ്പർ വഴി ബോട്ടിനെ Setting ചെയ്യാൻ പറ്റും! Sudo mode activate ചെയ്യാൻ ചുവടെ കാണുന്ന കളത്തിൽ ആദ്യം നമ്മുടെ ബോട്ടിന്റെ നമ്പർ country code ഉൾപ്പടെ Enter ചെയ്തതിനു ശേഷം `+´ ഇടേണ്ട ആവശ്യം ഇല്ല അതിനു ശേഷം,0,Add ചെയ്യേണ്ട നമ്പർ (ഉദാഹരണം: 919876543210,0,919090909090! എന്ന് Type ചെയ്തു വെക്കുക",
+            "required": false
+        },
+        "LANGUAGE": {
+            "description": "ബോട്ടിന്റ Language. Azerice => az, English => en, Türkçe => tr, മലയാളം => ml, Hindi => HI, Indonesia => ID, Español => ES, Portuguese => pt, Russian => ru",
+            "required": true,
+            "value": "TR"
+        },
+        "BGM_FILTER": {
+            "description": "BGM activate ചെയ്യാൻ 'true' എന്ന് ചുവടെ കൊടുക്കുക, വേണ്ടങ്കിൽ false എന്ന് കൊടുക്കുക .You want to activate BGM's set true,Otherwise false",
+            "required": false,
+            "value": "true"
+        },
+        "ANTİ_LİNK": {
+            "description": "ലിങ്കുകൾ ബ്ലോക്ക്‌ ആകുന്നു. Link Blocking System.",
+            "required": true,
+            "value": "false"
+        },
+        "AUTO_BİO": {
+            "description": "യാന്ത്രിക തീയതി,സമയം എന്നിവ നിങ്ങളുടെ about ഇൽ set ചെയ്യാൻ true എന്ന് കൊടുക്കുക. Set true for auto date, time in biography.",
+            "required": true,
+            "value": "false"
+        },
+        "HANDLERS": {
+            "description": "കമാണ്ടുകള്ക്കായി. For commands.",
+            "required": true,
+            "value": "^[.!;]"
+        },
+        "FULL_EVA": {
+            "description": "നിങ്ങളുടെ bot ഇനെ പൂർണമായും ഒരു Chat Bot (GoogleAssistant) പോലെ ആക്കി മാറ്റുന്നു Set ചെയ്യാൻ true കൊടുക്കുക! Turn your account into a chatbot!",
+            "required": true,
+            "value": "false"
+        },
+        "NO_LOG": {
+            "description": "ബോട്ടിന്റെ ലോഗുകൾ കാണിക്കുന്നു. Set true if you don't want to see error log.",
+            "required": true,
+            "value": "false"
+        },
+        "SEND_READ": {
+            "description": "അയച്ച മെസ്സേജ് Bot കണ്ടു എന്ന് അറിയാൻ ഉള്ള setting. Write true if you want to throw seen.",
+            "required": true,
+            "value": "true"
+        },
+        "HEROKU": {
+            "description": "If it is running in Heroku, type true.",
+            "required": true,
+            "value": "true"
+        },
+        "HEROKU_API_KEY": {
+            "description": "Heroku APIKEY ഇവടെ enter ചെയ്യുക! Herokuvinte Account settingsഇൽ API-KEY ഉണ്ട്.Enter Heroku API Key.",
+            "required": true
+        },
+        "MUTE_MESSAGE": {
+            "description": "Whatsapp Group close ആക്കുമ്പോൾ വരേണ്ട message ഇവടെ type ചെയ്യുക. Customizable Mute Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "BLOCK_CHAT": {
+            "description": "Choose in which chat the bot won't work there. Ex: 905xxxx && 905xxxx-1xxx or 905xxxx,905xxx...",
+            "required": false,
+            "value": "false"
+        },
+        "UNMUTE_MESSAGE": {
+            "description": "Düzenlenebilir Unmute Mesajı. Customizable Unmute Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "BLOCK_MESSAGE": {
+            "description": "Düzenlenebilir Block Mesajı. Customizable Block Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "UNBLOCK_MESSAGE": {
+            "description": "Düzenlenebilir Unblock Mesajı. Customizable Unblock Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "WORK_TYPE": {
+            "description": "WhatsAsena Working Type. താഴെ `public´ ഉപയോഗിക്കുകയാണെങ്കിൽ, എല്ലാവർക്കും ബോട്ട് ഉപയോഗിക്കാം. അല്ലെങ്കിൽ നിങ്ങൾ “private” ഉപയോഗിക്കുകയാണെങ്കിൽ, നിങ്ങൾക്ക് മാത്രമേ നിങ്ങളുടെ ബോട്ട് ഉപയോഗിക്കാൻ കഴിയൂ! If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
+            "required": true,
+            "value": "private"
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Herokuda uygulama adı. Heroku APP Name.",
+            "required": true
+        },
+        "DEBUG": {
+            "description": "Geliştiricilere özeldir.",
+            "required": true,
+            "value": "false"
+        },
+        "REMOVE_BG_API_KEY": {
+            "description": "ഒരു ഫോട്ടോയുടെ Background clear ചെയ്തു തരുന്ന ടൂൾ (https://remove.bg) ഈ link പോയിട്ട് login ചെയ്തു APIKEY എടുത്ത് താഴെ paste ചെയ്യുക (ഇത് നിങ്ങൾക്കു ആവശ്യം ഇല്ലങ്കിൽ ഒഴിവാക്കുക)",
+            "required": false
+        },
+        "ALIVE_MESSAGE": {
+            "description": "Customizable Alive Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "BAN_MESSAGE": {
+            "description": "Customizable Ban Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "ADD_MESSAGE": {
+            "description": "Customizable Add Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "KICKME_MESSAGE": {
+            "description": "Customizable Kickme Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "PROMOTE_MESSAGE": {
+            "description": "Customizable Promote Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "DEMOTE_MESSAGE": {
+            "description": "Customizable Demote Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "AFK_MESSAGE": {
+            "description": "Customizable AFK Message! Use => default, to change back.",
+            "required": false,
+            "value": "default"
+        },
+        "GAN_IMAGE": {
+            "description": "Type image link for Gan Style plugin.",
+            "required": true,
+            "value": "https://i.hizliresim.com/loUtAb.jpg"
+        },
+        "NO_ONLINE": {
+            "description": "Bot Online ill കാണിക്കാതിരിക്കാൻ True കൊടുക്കുക!അല്ലെങ്കിൽ false. Type true if you don't want to appear online.",
+            "required": false,
+            "value": "true"
+        },
+        "COFFEEHOUSE_API_KEY": {
+            "description": "Pass This Step! - Bu Bölümü Geçin!",
+            "required": false,
+            "value": "true"
+        }
+    },
+    "addons": [{
+      "plan": "heroku-postgresql"
+    }],
+    "buildpacks": [{
+      "url": "heroku-community/apt"
+      }]
+  }
